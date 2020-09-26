@@ -9,7 +9,6 @@ verify_ssl = true
 jupyterlab = "*"
 matplotlib = "*"
 matplotlib-venn = "*"
-pipenv = "*"
 
 [requires]
 python_version = "3.7"
