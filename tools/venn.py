@@ -6,6 +6,8 @@ A=set(['10', '11'])
 B=set(['11', '01'])
 
 def plot_venn(highlights):
+    """ Plot a venn diagram with two intersecting sets A and B
+    and highlight any combination of A, B and omega. """
     to_hide = set(['10', '11', '01'])-set(highlights)
     figure = plt.figure()
     ax=plt.gca()
