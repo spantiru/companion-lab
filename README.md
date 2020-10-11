@@ -11,4 +11,5 @@ Useful resources:
 * [Resources uploaded to Piazza](https://piazza.com/info.uaic.ro/fall2020/fiiml2020f/resources)
 * [Python official documentation](https://docs.python.org/3.8/library/index.html)
 * [Scikit-learn library](https://scikit-learn.org/stable/getting_started.html) - machine learning library for Python
+* [Scipy statistical functions](https://docs.scipy.org/doc/scipy/reference/stats.html)
 * [Jupyter Lab](https://jupyter.org/install) - to install Jupyter Lab locally
