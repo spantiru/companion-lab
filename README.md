@@ -12,4 +12,5 @@ Useful resources:
 * [Python official documentation](https://docs.python.org/3.8/library/index.html)
 * [Scikit-learn library](https://scikit-learn.org/stable/getting_started.html) - machine learning library for Python
 * [Scipy statistical functions](https://docs.scipy.org/doc/scipy/reference/stats.html)
+* [Pandas library](https://pandas.pydata.org/docs/reference/index.html) - library providing data structures and analysis tools for Python
 * [Jupyter Lab](https://jupyter.org/install) - to install Jupyter Lab locally
