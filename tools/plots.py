@@ -3,6 +3,31 @@ from matplotlib.colors import ListedColormap
 from scipy.spatial import Voronoi, voronoi_plot_2d
 import matplotlib.pyplot as plt
 from scipy.cluster.hierarchy import dendrogram
+import matplotlib as mpl
+
+def add_ellipses(gmm, ax, colors):
+    """ Draw 2d ellipses, on a given axis, corresponding to the
+    covariances of the GMM. """
+    for n, color in enumerate(colors):
+        if gmm.covariance_type == 'full':
+            covariances = gmm.covariances_[n][:2, :2]
+        elif gmm.covariance_type == 'tied':
+            covariances = gmm.covariances_[:2, :2]
+        elif gmm.covariance_type == 'diag':
+            covariances = np.diag(gmm.covariances_[n][:2])
+        elif gmm.covariance_type == 'spherical':
+            covariances = np.eye(gmm.means_.shape[1]) * gmm.covariances_[n]
+        v, w = np.linalg.eigh(covariances)
+        u = w[0] / np.linalg.norm(w[0])
+        angle = np.arctan2(u[1], u[0])
+        angle = 180 * angle / np.pi  # convert to degrees
+        v = 2. * np.sqrt(2.) * np.sqrt(v)
+        ell = mpl.patches.Ellipse(gmm.means_[n, :2], v[0], v[1],
+                                  180 + angle, color=color)
+        ell.set_clip_box(ax.bbox)
+        ell.set_alpha(0.5)
+        ax.add_artist(ell)
+        ax.set_aspect('equal', 'datalim')
 
 def plot_dendrogram(model, **kwargs):
     # Create linkage matrix and then plot the dendrogram
