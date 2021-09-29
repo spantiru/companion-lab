@@ -19,5 +19,7 @@ def plot_venn(highlights):
     for p in to_hide:
         v.get_patch_by_id(p).set_color('w')
         v.get_patch_by_id(p).set_alpha(1)
+    for p in {'10', '11', '01'}:
+        v.get_label_by_id(p).set_text('')
     venn2_circles(subsets)
     plt.show()
