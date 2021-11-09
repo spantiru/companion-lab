@@ -72,6 +72,8 @@ def plot_decision_surface(clas, X, Y):
 
     # Plot also the training points
     plt.scatter(X['X1'], X['X2'], c=Y, cmap=cmap_bold, s=20)
+    plt.xlabel('X1')
+    plt.ylabel('X2')
     plt.xlim(xx.min(), xx.max())
     plt.ylim(yy.min(), yy.max())
     plt.title("Classification")
