@@ -8,6 +8,7 @@
 To run this lab, either click the `launch binder` button above, or install the code on your machine following the instructions from [Jupyter Lab](https://jupyter.org/install).
 
 Useful resources:
+* [ML Homework](https://forms.gle/EmPiJqABNR7MZWgf8)
 * [Register for Piazza](https://forms.gle/KQP3pwRQxvqxVvLz6)
 * [Resources uploaded to Piazza](https://piazza.com/info.uaic.ro/fall2022/ml2022f/resources)
 * [Python official documentation](https://docs.python.org/3.8/library/index.html)
