@@ -11,7 +11,7 @@ matplotlib = "*"
 matplotlib-venn = "*"
 terminado = "==0.8.3"
 pandas = "*"
-sklearn = "*"
+scikit-learn = "*"
 importlib-metadata = "==4.8.3"
 
 [requires]
