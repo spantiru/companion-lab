@@ -9,10 +9,8 @@ verify_ssl = true
 jupyterlab = "*"
 matplotlib = "*"
 matplotlib-venn = "*"
-terminado = "==0.8.3"
 pandas = "*"
 scikit-learn = "*"
-importlib-metadata = "==4.8.3"
 
 [requires]
 python_version = "3.8"
