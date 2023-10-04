@@ -9,7 +9,7 @@ def plot_venn(highlights):
     """ Plot a venn diagram with two intersecting sets A and B
     and highlight any combination of A, B and omega. """
     to_hide = set(['10', '11', '01'])-set(highlights)
-    figure = plt.figure()
+    figure = plt.figure(figsize=(4, 3))
     ax=plt.gca()
     ax.text(0.7, 0.5, '$\Omega$', fontsize=16)
     if '00' in highlights:
