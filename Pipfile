@@ -11,8 +11,8 @@ matplotlib = "*"
 matplotlib-venn = "*"
 terminado = "==0.8.3"
 pandas = "*"
-sklearn = "*"
-importlib-metadata = "==1.7.0"
+scikit-learn = "*"
+importlib-metadata = "==4.8.3"
 
 [requires]
 python_version = "3.8"

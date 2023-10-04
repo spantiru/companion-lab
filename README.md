@@ -10,7 +10,7 @@ To run this lab, either click the `launch binder` button above, or install the c
 Useful resources:
 * [ML Homework](https://forms.gle/EmPiJqABNR7MZWgf8)
 * [Register for Piazza](https://forms.gle/KQP3pwRQxvqxVvLz6)
-* [Resources uploaded to Piazza](https://piazza.com/info.uaic.ro/fall2022/ml2022f/resources)
+* [Resources uploaded to Piazza](https://piazza.com/info.uaic.ro/fall2023/ml2023f/resources)
 * [Python official documentation](https://docs.python.org/3.8/library/index.html)
 * [Scikit-learn library](https://scikit-learn.org/stable/getting_started.html) - machine learning library for Python
 * [Scipy statistical functions](https://docs.scipy.org/doc/scipy/reference/stats.html)
