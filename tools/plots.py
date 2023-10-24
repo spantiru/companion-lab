@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 from matplotlib.colors import ListedColormap
 from scipy.spatial import Voronoi, voronoi_plot_2d
 import matplotlib.pyplot as plt
@@ -63,7 +64,7 @@ def plot_decision_surface(clas, X, Y):
     y_min, y_max = X['X2'].min() - 1, X['X2'].max() + 1
     xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
                          np.arange(y_min, y_max, h))
-    Z = clas.predict(np.c_[xx.ravel(), yy.ravel()])
+    Z = clas.predict(pd.DataFrame(np.c_[xx.ravel(), yy.ravel()], columns=['X1', 'X2']))
 
     # Put the result into a color plot
     Z = Z.reshape(xx.shape)
