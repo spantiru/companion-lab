@@ -94,7 +94,7 @@ def plot_decision_surface_knn(knn, X, Y, voronoi=False):
     y_min, y_max = X['X2'].min() - 1, X['X2'].max() + 1
     xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
                          np.arange(y_min, y_max, h))
-    Z = knn.predict(np.c_[xx.ravel(), yy.ravel()])
+    Z = knn.predict(pd.DataFrame(np.c_[xx.ravel(), yy.ravel()], columns=['X1', 'X2']))
 
     # Put the result into a color plot
     Z = Z.reshape(xx.shape)
