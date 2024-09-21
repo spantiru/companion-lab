@@ -11,7 +11,7 @@ def plot_venn(highlights):
     to_hide = set(['10', '11', '01'])-set(highlights)
     figure = plt.figure(figsize=(4, 3))
     ax=plt.gca()
-    ax.text(0.7, 0.5, '$\Omega$', fontsize=16)
+    ax.text(0.7, 0.5, r'$\Omega$', fontsize=16)
     if '00' in highlights:
         figure.patch.set_facecolor('grey')
     subsets={'10': 1, '01': 1, '11': 1}

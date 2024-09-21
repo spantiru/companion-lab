@@ -24,7 +24,7 @@ def add_ellipses(gmm, ax, colors):
         angle = 180 * angle / np.pi  # convert to degrees
         v = 2. * np.sqrt(2.) * np.sqrt(v)
         ell = mpl.patches.Ellipse(gmm.means_[n, :2], v[0], v[1],
-                                  180 + angle, color=color)
+                                  angle=180 + angle, color=color)
         ell.set_clip_box(ax.bbox)
         ell.set_alpha(0.5)
         ax.add_artist(ell)
