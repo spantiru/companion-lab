@@ -2,14 +2,30 @@
 
 # JupyterLab for the Machine Learning seminar
 
-Ștefan Panțiru, Faculty of Computer Science Iași
+Ștefan Panțiru, Faculty of Computer Science, "Alexandru Ioan Cuza" University Iași
 
 To run this lab, either click the `launch binder` button above, or run the code on your machine following the instructions below.
 
-Useful resources:
+## Contents
+* [Lab01 - Elementary Notions in Probability and Statistics](Lab01.ipynb)
+* [Lab02 - Decision Trees (part1)](Lab02.ipynb) 
+* [Lab03 - Decision Trees (part2)](Lab03.ipynb)
+* [Lab04 - Decision Trees (part3)](Lab04.ipynb)
+* [Lab05 - Naive Bayes (part1)](Lab05.ipynb)
+* [Lab06 - Naive Bayes (part2)](Lab06.ipynb)
+* [Lab07 - Maximum Likelihood Estimation](Lab07.ipynb)
+* Week 8 - Midterm Exam
+* [Lab09 - Logistic Regression](Lab09.ipynb)
+* [Lab10 - k-Nearest Neighbour](Lab10.ipynb)
+* [Lab11 - AdaBoost](Lab11.ipynb)
+* [Lab12 - Hierarchical Clustering](Lab12.ipynb)
+* [Lab13 - k-Means (part1)](Lab13.ipynb)
+* [Lab14 - k-Means (part2)](Lab14.ipynb)
+
+## Useful resources:
 * [ML Homework](https://forms.gle/EmPiJqABNR7MZWgf8)
 * [Register for Piazza](https://forms.gle/KQP3pwRQxvqxVvLz6)
-* [Resources uploaded to Piazza](https://piazza.com/info.uaic.ro/fall2023/ml2023f/resources)
+* [Resources uploaded to Piazza](https://piazza.com/info.uaic.ro/spring2024/ml2024f/resources)
 * [Python official documentation](https://docs.python.org/3.12/library/index.html)
 * [Scikit-learn library](https://scikit-learn.org/stable/getting_started.html) - machine learning library for Python
 * [Scipy statistical functions](https://docs.scipy.org/doc/scipy/reference/stats.html)
