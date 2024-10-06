@@ -1,0 +1,75 @@
+digraph G {
+    rankdir=LR;  // Left to right layout
+    splines=false;  // Make arrows straight lines
+
+    // Global node styling for a professional look
+    node [
+        shape=box,
+        style=filled,
+        fillcolor=lightblue,
+        color=black,  // Black border
+        fontname="Helvetica",
+        fontsize=10,
+        penwidth=0.8
+    ];
+
+    // Global edge styling
+    edge [color=gray, arrowsize=0.8, penwidth=0.8];
+
+    // Define the structure
+    "Machine Learning" -> "Supervised Learning";
+    "Machine Learning" -> "Unsupervised Learning";
+
+    // Linear and Non-linear split under Supervised Learning
+    "Supervised Learning" -> "Linear";
+    "Supervised Learning" -> "Non-Linear";
+
+    // Linear Supervised Learning Algorithms
+    "Linear" -> "Linear Regression";
+    "Linear" -> "Logistic Regression";
+    "Linear" -> "Naive Bayes";
+    "Linear" -> "Support Vector Machines (SVM)";
+
+    // Highlighted Logistic Regression
+    "Logistic Regression" [fontcolor=red];
+
+    // Highlighted Naive Bayes
+    "Naive Bayes" [fontcolor=red];
+
+    // Non-Linear Supervised Learning Algorithms
+    "Non-Linear" -> "Decision Trees";
+    "Non-Linear" -> "k-Nearest Neighbors (k-NN)";
+    "Non-Linear" -> "Neural Networks";
+    "Non-Linear" -> "AdaBoost";
+    "Non-Linear" -> "ARIMA";  // Time series forecasting
+    "Non-Linear" -> "XGBoost";
+
+    // Highlighted Decision Trees
+    "Decision Trees" [fontcolor=red];
+
+    // Highlighted k-NN
+    "k-Nearest Neighbors (k-NN)" [fontcolor=red];
+
+    // Highlighted AdaBoost
+    "AdaBoost" [fontcolor=red];
+
+    // Unsupervised Learning split into Clustering and Dimensionality Reduction
+    "Unsupervised Learning" -> "Clustering";
+    "Unsupervised Learning" -> "Dimensionality Reduction";
+
+    // Clustering Algorithms
+    "Clustering" -> "K-means";
+    "Clustering" -> "Hierarchical Clustering";
+    "Clustering" -> "Gaussian Mixture Models (GMM)";
+
+    // Highlighted K-means
+    "K-means" [fontcolor=red];
+
+    // Highlighted Hierarchical Clustering
+    "Hierarchical Clustering" [fontcolor=red];
+
+    // Dimensionality Reduction Algorithms
+    "Dimensionality Reduction" -> "Principal Component Analysis (PCA)";
+    "Dimensionality Reduction" -> "t-SNE";
+}
+
